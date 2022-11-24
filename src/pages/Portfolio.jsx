@@ -1,5 +1,9 @@
+import { Header } from "../components/Header";
+import portfolioImg from '../assets/portfolio.svg'
+
+
 export function Portfolio() {
     return(
-        <h1>Inicio na pagina Portfolio</h1>
+        <Header title="Meus Projetinhos" image={portfolioImg} />   
     )
 }

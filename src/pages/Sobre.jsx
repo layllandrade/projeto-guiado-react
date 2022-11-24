@@ -1,5 +1,9 @@
+import { Header } from "../components/Header";
+import sobreImg from '../assets/sobre.svg'
+
+
 export function Sobre() {
     return(
-        <h1>Inicio na pagina Sobre</h1>
+        <Header title="Sobre mim" image={sobreImg} />   
     )
 }
