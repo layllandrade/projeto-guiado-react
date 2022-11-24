@@ -1,0 +1,15 @@
+.sobreInicio {
+    padding: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9rem;
+    text-align: center;
+}
+
+.sobreImg {
+   width:100%;
+}
+.sobreCodigoContainer {
+    width: 80%;
+}
