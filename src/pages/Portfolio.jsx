@@ -5,9 +5,21 @@ import maravilhosaImg from '../assets/maravilhosa.png'
 import netflixImg from '../assets/netflix.png'
 
 import styles from '../styles/components/pages/portfolio.module.css'
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 
 export function Portfolio() {
+    const [reposFromApi, setReposFromApi] = useState([])
+    const baseURL ='https://api.github.com/users/layllandrade/repos'
+
+    useEffect (() => {
+        async function getData(){
+            const response = await axios.get(baseURL)
+            setReposFromApi(response.data)
+        }
+        getData()
+    }, [])
     return(
         <>
             <div>
@@ -40,36 +52,16 @@ export function Portfolio() {
                 <h2 className={styles.projectsTitle}>Outros projetos no meu Github</h2>
                 <div className={styles.projetsContainer}>
                     <div className={styles.cardsRepoContainer}>
-                        <div className={styles.cardRepo}>
-                            <h3 className={styles.cardRepoText}>Titulo</h3>
-                            <p className={styles.cardRepoText}>Descrição</p>
-                            <a className={styles.cardLink} href="https://projetonetflixx.netlify.app/" target="_blank">Ver projeto</a>
-                        </div>
-                        <div className={styles.cardRepo}>
-                            <h3 className={styles.cardRepoText}>Titulo</h3>
-                            <p className={styles.cardRepoText}>Descrição</p>
-                            <a className={styles.cardLink} href="https://projetonetflixx.netlify.app/" target="_blank">Ver projeto</a>
-                        </div>
-                        <div className={styles.cardRepo}>
-                            <h3 className={styles.cardRepoText}>Titulo</h3>
-                            <p className={styles.cardRepoText}>Descrição</p>
-                            <a className={styles.cardLink} href="https://projetonetflixx.netlify.app/" target="_blank">Ver projeto</a>
-                        </div> 
-                        <div className={styles.cardRepo}>
-                            <h3 className={styles.cardRepoText}>Titulo</h3>
-                            <p className={styles.cardRepoText}>Descrição</p>
-                            <a className={styles.cardLink} href="https://projetonetflixx.netlify.app/" target="_blank">Ver projeto</a>
-                        </div>
-                        <div className={styles.cardRepo}>
-                            <h3 className={styles.cardRepoText}>Titulo</h3>
-                            <p className={styles.cardRepoText}>Descrição</p>
-                            <a className={styles.cardLink} href="https://projetonetflixx.netlify.app/" target="_blank">Ver projeto</a>
-                        </div>
-                        <div className={styles.cardRepo}>
-                            <h3 className={styles.cardRepoText}>Titulo</h3>
-                            <p className={styles.cardRepoText}>Descrição</p>
-                        
-                        </div>
+                        {reposFromApi.map(repo => {
+                        return(
+                            <>
+                                <div className={styles.cardRepo}>
+                                    <h3 className={styles.cardRepoText}>{repo.name}</h3>
+                                    <p className={styles.cardRepoText}>{repo.description}</p>
+                                </div>
+                            </>
+                        )
+                        })}
                     </div>
                 </div>
             </div>
