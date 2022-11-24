@@ -1,0 +1,33 @@
+.projetosFavoritos {
+    width: 100%;
+    color: #686aac;
+    text-align: center;
+    padding-top: 6rem;
+}
+
+.tituloPrincipal {
+    font-size: 4rem;
+}
+
+.containerCards {
+    margin: 0 auto;
+    width: 80%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    font-size: 1rem;
+}
+
+.cards {
+    width: 57%;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    font-size: 1.2rem;
+}
+.cardImg {
+  width:100%;
+}
