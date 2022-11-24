@@ -31,3 +31,14 @@
 .cardImg {
   width:100%;
 }
+.cardLink {
+    background-color: #686aac;
+    border: none;
+    color: #fff;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
