@@ -39,37 +39,38 @@ export function Portfolio() {
             <div className={styles.projetsContainer}>
                 <h2 className={styles.projectsTitle}>Outros projetos no meu Github</h2>
                 <div className={styles.projetsContainer}>
-                <div className={styles.cardsRepoContainer}>
-                    <div className={styles.cardRepo}>
-                        <h3 className={styles.cardRepoText}>Titulo</h3>
-                        <p className={styles.cardRepoText}>Descrição</p>
+                    <div className={styles.cardsRepoContainer}>
+                        <div className={styles.cardRepo}>
+                            <h3 className={styles.cardRepoText}>Titulo</h3>
+                            <p className={styles.cardRepoText}>Descrição</p>
+                            <a className={styles.cardLink} href="https://projetonetflixx.netlify.app/" target="_blank">Ver projeto</a>
+                        </div>
+                        <div className={styles.cardRepo}>
+                            <h3 className={styles.cardRepoText}>Titulo</h3>
+                            <p className={styles.cardRepoText}>Descrição</p>
+                            <a className={styles.cardLink} href="https://projetonetflixx.netlify.app/" target="_blank">Ver projeto</a>
+                        </div>
+                        <div className={styles.cardRepo}>
+                            <h3 className={styles.cardRepoText}>Titulo</h3>
+                            <p className={styles.cardRepoText}>Descrição</p>
+                            <a className={styles.cardLink} href="https://projetonetflixx.netlify.app/" target="_blank">Ver projeto</a>
+                        </div> 
+                        <div className={styles.cardRepo}>
+                            <h3 className={styles.cardRepoText}>Titulo</h3>
+                            <p className={styles.cardRepoText}>Descrição</p>
+                            <a className={styles.cardLink} href="https://projetonetflixx.netlify.app/" target="_blank">Ver projeto</a>
+                        </div>
+                        <div className={styles.cardRepo}>
+                            <h3 className={styles.cardRepoText}>Titulo</h3>
+                            <p className={styles.cardRepoText}>Descrição</p>
+                            <a className={styles.cardLink} href="https://projetonetflixx.netlify.app/" target="_blank">Ver projeto</a>
+                        </div>
+                        <div className={styles.cardRepo}>
+                            <h3 className={styles.cardRepoText}>Titulo</h3>
+                            <p className={styles.cardRepoText}>Descrição</p>
+                        
+                        </div>
                     </div>
-                    <div className={styles.cardRepo}>
-                        <h3 className={styles.cardRepoText}>Titulo</h3>
-                        <p className={styles.cardRepoText}>Descrição</p>
-                    
-                    </div>
-                    <div className={styles.cardRepo}>
-                        <h3 className={styles.cardRepoText}>Titulo</h3>
-                        <p className={styles.cardRepoText}>Descrição</p>
-                    
-                    </div> 
-                    <div className={styles.cardRepo}>
-                        <h3 className={styles.cardRepoText}>Titulo</h3>
-                        <p className={styles.cardRepoText}>Descrição</p>
-                    
-                    </div>
-                    <div className={styles.cardRepo}>
-                        <h3 className={styles.cardRepoText}>Titulo</h3>
-                        <p className={styles.cardRepoText}>Descrição</p>
-                    
-                    </div>
-                    <div className={styles.cardRepo}>
-                        <h3 className={styles.cardRepoText}>Titulo</h3>
-                        <p className={styles.cardRepoText}>Descrição</p>
-                    
-                    </div>
-                </div>
                 </div>
             </div>
         </>

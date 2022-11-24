@@ -77,3 +77,10 @@
 .projectsTitle {
     font-size: 4rem;
 }
+
+.projetsContainer {
+width: 100%;
+color: #686aac;
+text-align: center;
+padding-top: 6rem;
+}
