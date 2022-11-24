@@ -1,0 +1,38 @@
+.sobreContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.sobreImagemContainer {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+.sobreDescricaoContainer{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sobreImg {
+    width: 60%;
+    border-radius: 100%;
+}
+
+.sobreTitulo {
+    font-size: 2.5rem;
+    padding: 2rem;
+    color: #474a51;
+    width: 80%;
+}
+
+.sobreDescricao {
+    padding: 2rem;
+    font-size: 1.2rem;
+    color: #474a51;
+    width: 60%;
+}
