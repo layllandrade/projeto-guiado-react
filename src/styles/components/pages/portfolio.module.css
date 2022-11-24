@@ -58,8 +58,8 @@
 
 .cardRepo {
     background: #686AAC;
-    width: 20%;
-    height: 230px;
+    width: 38%;
+    height: 210px;
     padding: 2rem;
     border-radius: 4px;
     text-align: center;
@@ -79,8 +79,16 @@
 }
 
 .projetsContainer {
-width: 100%;
-color: #686aac;
-text-align: center;
-padding-top: 6rem;
+    width: 100%;
+    color: #686aac;
+    text-align: center;
+    padding-top: 6rem;
+}
+
+.tag {
+    text-decoration: none;
+    color: #686AAC;
+    padding: 5px;
+    background: white;
+    border-radius: 10px;
 }

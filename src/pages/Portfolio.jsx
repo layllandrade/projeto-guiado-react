@@ -53,14 +53,15 @@ export function Portfolio() {
                 <div className={styles.projetsContainer}>
                     <div className={styles.cardsRepoContainer}>
                         {reposFromApi.map(repo => {
-                        return(
-                            <>
-                                <div className={styles.cardRepo}>
-                                    <h3 className={styles.cardRepoText}>{repo.name}</h3>
-                                    <p className={styles.cardRepoText}>{repo.description}</p>
-                                </div>
-                            </>
-                        )
+                            return(
+                                <>
+                                    <div className={styles.cardRepo}>
+                                        <h3 className={styles.cardRepoText}>{repo.name}</h3>
+                                        <p className={styles.cardRepoText}>{repo.description}</p>
+                                        <a className={styles.tag} href={repo.html_url}>Conferir</a>
+                                    </div>
+                                </>
+                            )
                         })}
                     </div>
                 </div>
