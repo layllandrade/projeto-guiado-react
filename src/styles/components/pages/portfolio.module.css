@@ -28,9 +28,11 @@
     gap: 3rem;
     font-size: 1.2rem;
 }
+
 .cardImg {
   width:100%;
 }
+
 .cardLink {
     background-color: #686aac;
     border: none;
@@ -41,4 +43,37 @@
     font-size: 16px;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.cardsRepoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+.cardRepo {
+    background: #686AAC;
+    width: 20%;
+    height: 230px;
+    padding: 2rem;
+    border-radius: 4px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cardRepoText {
+    color: #fff;
+}
+
+.projectsTitle {
+    font-size: 4rem;
 }
